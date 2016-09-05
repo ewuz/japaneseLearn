@@ -1,0 +1,49 @@
+//
+   Created by ewuzg on 2016/2/12.
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width,initial-scale=1")
+        meta(name="description",content="")
+        meta(name="author",content="")
+        link(rel="icon",href="/images/ico.png")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="/stylesheets/less/bootstrap.css")
+        link(rel="styleSheet", href="/stylesheets/jl_signin.css")
+        script(type="text/javascript", src="/javascripts/jquery-2.2.0.js")
+        script(type="text/javascript", src="/javascripts/bootstrap.js")
+        script(type="text/javascript", src="/javascripts/common.js")
+        script(type="text/javascript", src="/javascripts/front_js/jl_login.js")
+    body
+        img.bg(src="/images/login_bg.jpg")
+        div#common-alert
+        //h1.title ようこそ、ア木ラの場所へ！
+        img.title(src="/images/title.png")
+        div.container
+            div#login_form.form-signin(method="post")
+                h2.form-signin-heading Please sign in
+                label.sr-only(for="username") Email address
+                input#username.form-control(type="text",name="username",placeholder="User name",required="",autofocus="")
+                label.sr-only(for="password") Password
+                input#password.form-control(type="password",name="password",placeholder="Password",required="")
+                div.check
+                    input(type="checkbox",value="remember me")
+                    lable Remenber me
+                button.btn.btn-lg.btn-primary.btn-block(type="submit") Sign in
+                a.register-btn.a-btn 没有账号？点此创建
+            div#register_form.form-register(style="display: none;")
+                h2.form-signin-heading Register
+                label.sr-only(for="username") Email address
+                input#username-r.form-control(type="text",name="username",placeholder="User name",required="",autofocus="")
+                label.sr-only(for="password") Password
+                input#password-r.form-control(type="password",name="password",placeholder="Password",required="")
+                label.sr-only(for="Password") confirmPassword
+                input#confirmPassword-r.form-control(type="password",name="confirmPassword",placeholder="Confirm password",required="")
+                button.btn.btn-lg.btn-primary.btn-block(type="submit") Register
+                a.return-btn.a-btn 返回登录
+</body>
+</html>

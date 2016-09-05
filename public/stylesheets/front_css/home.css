@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #373a3c;
+    background-color: #fff;
+}
+.logo_bg{
+    height: 60px;
+    width: 250px;
+    background: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0px;
+}
+.contact_me{
+    position:absolute;
+    left:258px;
+    top:20px;
+}
+#left-panel{
+    position: absolute;
+    top: 60px;
+    left:0px;
+    /*float:left;*/
+    width:250px;
+    min-height: 100%;
+    background: #304961;
+    /*height: 100%;*/
+    /*min-height:600px;*/
+}
+.dropdown a,.dropdown-menu>li>a{
+    color:#fff;
+}
+.dropdown-menu{
+    position: relative;
+    float: none;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    border:0px;
+    background:#526f8a;
+}
+#navbar-collapse{
+    width:250px;
+    float:left;
+    overflow-y:auto;
+}
+
+.dropdown>a{
+    font-size:18px;
+}
+.dropdown-menu>li>a{
+    text-align: center;
+    font-size: 16px;
+}
+.right-panel{
+    margin-left: 250px;
+    padding: 10px;
+    background: #fff;
+}
+.default-panel{
+    /*float: left;*/
+    /*margin-left: 15px;*/
+    /*width: 885px;*/
+}
+
+.btns{
+    font-size: 16px;
+    margin-right:15px;
+    float:left;
+}
+
+tr a{
+    margin-right: 15px;
+}
+
+.nav-title{
+    padding: 10px;
+    font-size: 16px;
+    border-bottom: 2px solid #337ab7;
+    color:#000;
+}
+.sub_active a{
+    background:#6e90af;
+}
+
+.table-responsive{
+    overflow-x: hidden;
+}
+
+.form-control{
+    height:initial;
+}
+
+.ico-add{
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    color: #337ab7;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+}
+
+.panel-heading{
+    position: relative;
+}
+
+.panel-heading:hover .ico-add{
+    display: block;
+}
+
+
+.alert-content img{
+    width: 170px;
+    display: block;
+    margin: auto;
+}
+
+.alert-content .alert-txt{
+    text-align: center;
+    font-size: 16px;
+}
+.nav-pills>li>a{
+    border-radius: 0px;
+}
+.clear{
+    clear: both;
+}
+
+.example-list textarea{
+    margin-bottom: 10px;
+}
+.add-example{
+    /*font-size: 16px;
+    left: 21px;
+    line-height: 40px;
+    color: #337ab7;*/
+}
+.add-example:hover{
+    /*color:#2e6da4;*/
+    cursor:pointer;
+}
+
+
+/*例句列表*/
+.sentences-list{
+    padding: 19px 12px 12px 12px;
+}
+.time{
+    position: absolute;
+    right: 65px;
+    color: #337ab7;
+    font-size: 16px;
+}
+.del{
+    position: absolute;
+    right: 0px;
+    color: #337ab7;
+    font-size: 16px;
+    cursor: pointer;
+}
+.example-list>div{
+    position: relative;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+    text-decoration: none;
+    background-color: #253a4e;
+}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    text-decoration: none;
+    background-color: #6e90af;
+}
+
+.gammar_info{
+    font-size: 16px;
+    padding:10px;
+    text-align: center;
+    display: block;
+    font-weight: bold;
+    color: #337ab7;
+}
+
+.sentences{
+    margin-right: 150px;
+}

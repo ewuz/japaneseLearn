@@ -1,0 +1,30 @@
+//
+   Created by ewuzg on 2016/2/12.
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width,initial-scale=1")
+        meta(name="description",content="")
+        meta(name="author",content="")
+        link(rel="icon",href="/images/favicon.ico")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="/stylesheets/less/bootstrap.css")
+        link(rel="styleSheet", href="/stylesheets/signin.css")
+    body
+        div.container
+            form.form-signin(method="post")
+                h2.form-signin-heading Please sign in
+                label.sr-only(for="username") Email address
+                input#username.form-control(type="text",name="username",placeholder="User name",required="",autofocus="")
+                label.sr-only(for="inputPassword") Password
+                input#inputPassword.form-control(type="password",name="password",placeholder="Password",required="")
+                div.checkbox
+                    input(type="checkbox",value="remember me")
+                    lable Remenber me
+                button.btn.btn-lg.btn-primary.btn-block(type="submit") Sign in
+</body>
+</html>

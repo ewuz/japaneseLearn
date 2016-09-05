@@ -1,0 +1,73 @@
+body {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+a:hover{
+  cursor:pointer;
+  list-style-type: none;
+  text-decoration: none;
+}
+.bg{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  min-height:400px;
+  z-index: -1;
+}
+
+.form-signin, .form-register {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background:rgba(255,255,255,0.7);
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox,
+.form-register .form-signin-heading,
+.form-register .checkbox{
+  margin-bottom: 10px;
+}
+.checkbox {
+  font-weight: normal;
+}
+.form-control{
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-control:focus {
+  z-index: 2;
+}
+input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+input[type="password"] ,
+input[type="text"] {
+  margin-bottom: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.check{
+  margin-bottom: 10px;
+}
+
+.title{
+  width: 600px;
+  display: block;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.a-btn{
+  text-align: right;
+  margin-top: 10px;
+  display: block;
+}

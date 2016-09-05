@@ -1,0 +1,73 @@
+//
+   Created by ewuzg on 2016/2/17.
+
+//
+   Created by ewuzg on 2016/2/12.
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width,initial-scale=1")
+        meta(name="description",content="")
+        meta(name="author",content="")
+        link(rel="icon",href="/images/ico.png")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="/stylesheets/less/bootstrap.css")
+        link(rel="styleSheet", href="/stylesheets/front_css/home.css")
+        script(type="text/javascript", src="/javascripts/jquery-2.2.0.js")
+        script(type="text/javascript", src="/javascripts/bootstrap.js")
+        script(type="text/javascript", src="/javascripts/common.js")
+        script(type="text/javascript", src="/javascripts/front_js/jl_home.js")
+    body
+        nav
+            .logo_bg
+            .logo
+                img(src="images/ico.png")
+            .nav-list
+                .user-info
+                ul
+                    li
+                        a(href="http://www.glxakira.com", target="black") 我的个人网站
+                    li
+                        a 我的主页
+            a(target="_blank",href="http://wpa.qq.com/msgrd?v=3&uin=1375334046&site=qq&menu=yes").contact_me
+                img(border="0",src="http://wpa.qq.com/pa?p=2:1375334046:52", alt="点击这里给我发消息", title="点击这里给我发消息",style="border-radius: 13px;width:26px;")
+            div#common-alert
+
+        #content
+            #left-panel
+                #navbar-collapse
+                    ul.nav.nav-pills.nav-stacked
+
+            .default-panel.right-panel
+                p.nav-title
+                #list-panel.default-panel.block-panel
+                    .panel-group#accordion(role="tablist",aria-multiselectable="true")
+
+                #alert-panel.default-panel.block-panel(style="display: none;")
+                    .alert-content
+                        img(src="images/alert_img.png")
+                        div.alert-txt データがありません、管理人に連絡してください。
+                #add-panel.default-panel.block-panel(style="display: none;")
+                    form.form-horizontal
+                        span.gammar_info 每日例句之：
+                            span.grammar
+                        .form-group
+                            label.col-sm-1.control-label(for="example") 例句
+                            .example-list.col-sm-10
+                                textarea#example.form-control(type="text",placeholder="example")
+                    .control-btn
+                        .add-example.btns.btn.btn-primary
+                            .glyphicon.glyphicon-plus
+                            span 添加
+                        .add-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-ok
+                            span 确定
+                        .back-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-step-backward
+                            span 返回
+        .clear
+        footer 日语语法记忆平台，版权归郭璐晓（Akira）所有

@@ -1,0 +1,87 @@
+//
+   Created by ewuzg on 2016/2/12.
+
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport",content="width=device-width,initial-scale=1")
+        meta(name="description",content="")
+        meta(name="author",content="")
+        link(rel="icon",href="/images/ico.png")
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel="stylesheet", href="/stylesheets/less/bootstrap.css")
+        link(rel="styleSheet", href="/stylesheets/cms_css/cms_index.css")
+        script(type="text/javascript", src="/javascripts/jquery-2.2.0.js")
+        script(type="text/javascript", src="/javascripts/bootstrap.js")
+        script(type="text/javascript", src="/javascripts/common.js")
+        script(type="text/javascript", src="/javascripts/cms_js/cms_index.js")
+    body
+        #panel-con
+            #left-panel
+                #navbar-collapse
+                    ul.nav.nav-pills.nav-stacked
+
+            .default-panel.right-panel
+                p.bg-primary.nav-title
+                #default-panel.default-panel.block-panel
+                    .table-responsive
+                        table.table.table-striped
+                            thead
+                                tr
+                                    th #
+                                    th 语法
+                                    th(width=550) 解释
+                                    th(width=135) 操作
+                            tbody
+                    .control-btn
+                        .add-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-edit
+                            span 添加
+                        .del-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-trash
+                            span 删除
+                #add-panel.default-panel.block-panel(style="display: none;")
+                    form.form-horizontal
+                        .form-group
+                            label.col-sm-2.control-label(for="syntactic") 语法
+                            .col-sm-10
+                                input#syntactic.form-control(type="text",placeholder="syntactic")
+                        .form-group
+                            label.col-sm-2.control-label(for="explain") 解释
+                            .col-sm-10
+                                textarea#explain.form-control(placeholder="explain",rows="8")
+                        .form-group
+                            label.col-sm-2.control-label(for="example") 例句
+                            .col-sm-10
+                                textarea#example.form-control(placeholder="example",rows="8")
+                    .control-btn
+                        .add-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-ok
+                            span 确定
+                        .back-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-step-backward
+                            span 返回
+                #detail-panel.default-panel.block-panel(style="display: none;")
+                    form.form-horizontal
+                        .form-group
+                            label.col-sm-2.control-label(for="syntactic-detail") 语法
+                            .col-sm-10
+                                pre#syntactic-detail.form-control
+                        .form-group
+                            label.col-sm-2.control-label(for="explain-detail") 解释
+                            .col-sm-10
+                                pre#explain-detail.form-control
+                        .form-group
+                            label.col-sm-2.control-label(for="example-detail") 例句
+                            .col-sm-10
+                                pre#example-detail.form-control
+                    .control-btn
+                        .add-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-ok
+                            span 添加
+                        .back-btn.btns.btn.btn-primary
+                            .glyphicon.glyphicon-step-backward
+                            span 返回
